@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MyCollection Manager - Copa do Mundo</title>
+
+<link rel="stylesheet" href="dom.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+
+<h1>🏆 Álbum da Copa do Mundo</h1>
+<p class="subtitulo">Organize suas figurinhas favoritas</p>
+
+<section class="painel">
+
+<div class="box">
+<h3>Total</h3>
+<p id="total-itens">0</p>
+</div>
+
+<div class="box">
+<h3>Repetidas</h3>
+<p id="total-repetidos">0</p>
+</div>
+
+<div class="box">
+<h3>Únicas</h3>
+<p id="total-unicos">0</p>
+</div>
+
+</section>
+
+</header>
+
+<main>
+
+<section class="formulario">
+
+<h2>Adicionar Figurinha</h2>
+
+<input type="text" id="nome" placeholder="Nome do Jogador">
+
+<input type="text" id="pais" placeholder="País">
+
+<input type="url" id="imagem" placeholder="URL da Foto">
+
+<select id="raridade">
+<option>Comum</option>
+<option>Rara</option>
+<option>Lendária</option>
+<option>Ultra Rara</option>
+</select>
+
+<label class="check">
+<input type="checkbox" id="repetido">
+Figurinha Repetida
+</label>
+
+<button id="btn-adicionar">
+⚽ Adicionar Figurinha
+</button>
+
+</section>
+
+<section class="busca">
+<input type="text" id="pesquisa" placeholder="🔎 Buscar jogador...">
+</section>
+
+<section id="colecao" class="colecao"></section>
+
+</main>
+
+<script src="dom.js"></script>
+
+</body>
+</html>
